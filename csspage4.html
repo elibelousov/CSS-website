@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+    text-align:center;
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+  font-family:'Monaco';
+  font-weight:300;
+  font-size:46px;
+  padding-top:1vh;
+  height:100vh;
+  overflow:hidden;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #555;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+ /*code for animated code below*/
+
+div{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+div:before,
+div:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+
+p {
+  text-align:left;
+  position:fixed;
+  width:100%;
+  bottom:60px;
+  font-size:16px;
+  color:#555;
+  margin-top:200px;
+}
+
+</style>
+</head>
+<body>
+
+<p>
+</p>
+
+<div title="404">404 Error</div>
+
+
+
+
+
+
+
+
+<p>Bugs are unfortunately an inevitability in the world of modding and the best way to approach them is to accept that they cannot be prevented, they can only be mitigated. Make sure to think of encountering them as an opportunity to learn something new or avoid future mistakes. Taking notes and practicing will go a long way.
+
+</p>
+
+
+
+<div class="navbar">
+  <a href="https://elibelousov.github.io/CSS-website/index.html" >Home
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage2.html">Intro
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage3.html">Excel
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage4.html"class="active">Bugs
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage5.html">Contact
+</a>
+</div>
+
+
+
+</body>
+</html>
+
+

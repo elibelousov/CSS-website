@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    text-align:center;
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+  font-family:'Monaco';
+  font-weight:300;
+  font-size:16px;
+  padding-top:1vh;
+  height:100vh;
+  overflow:hidden;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #555;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+ /*code for animated code below*/
+
+#container {
+  color:#555;
+  font-size:23px;
+  font-weight:bold;
+  padding-top:100px;  
+  width:100%;
+  bottom:45%;
+  display:block;
+    text-align:center;
+
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#555;
+  padding:4px 20px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 8s linear infinite;
+}
+
+
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  text-align:left;
+  position:fixed;
+  width:100%;
+  bottom:60px;
+  font-size:16px;
+  color:#555;
+  margin-top:200px;
+}
+
+</style>
+</head>
+<body>
+<h1>How Excel can help you mod</h1>
+
+<p></p>
+
+<div id=container>
+Better  <div id=flip>
+    <div><div>Organization</div></div>
+    <div><div>Safekeeping </div></div>
+    <div><div>Time-saving </div></div>
+  </div>
+
+
+
+
+
+<p>By using Excel or other spreadsheets, one can significantly improve their modding experience. This is because they can help you organize your data, ensure that it's always saved automatically, and  with their large selection of formulas and tools, save you time!
+
+</p>
+
+
+
+<div class="navbar">
+  <a href="https://elibelousov.github.io/CSS-website/index.html" >Home
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage2.html">Intro
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage3.html"class="active">Excel
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage4.html">Bugs
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage5.html">Contact
+</a>
+</div>
+
+
+
+</body>
+</html>
+
+

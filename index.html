@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    text-align:center;
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+  font-family:'Monaco';
+  font-weight:300;
+  font-size:16px;
+  padding-top:1vh;
+  height:100vh;
+  overflow:hidden;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #555;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+ /*code for animated code below*/
+
+#name {
+  width:0px;
+  animation: reveal 7s ;
+}
+
+#name span {
+  margin-left:-355px;
+  animation: slidein 7s ;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #555;
+  --complimentary-color: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  background-color: var(--complimentary-color);
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ position: relative;
+}
+
+h1 {
+  font-size: 150px;
+  color: var(--primary-color);
+  transform: translateY(-600px);
+  animation: 1.2s slideIn ease-in-out forwards 1s;
+  z-index: 10;
+  opacity: 0;
+  position: relative;
+}
+
+h1::before {
+    content: '';
+    width: 0%;
+    height: 76px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: -10px;
+    animation: 1s underline ease-in-out forwards 2s;
+    mix-blend-mode: screen;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    transform: scale(.5);
+    animation: .5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
+}
+
+@keyframes skewBg {
+  0% {
+    transform: scale(.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes underline {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class = 'container projects'>
+   <h1>Modding Victoria 3</h1>
+<div class="overlay"></div>
+</div>
+
+
+
+<p></p>
+
+
+
+
+
+<p>
+
+</p>
+
+<div id = "name"> 
+  <span>by Eli Belousov</span>
+</div>
+
+<div class="navbar">
+  <a href="https://elibelousov.github.io/CSS-website/csspage1.html"class="active">Home
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage2.html">Intro
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage3.html">Excel
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage4.html">Bugs
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage5.html">Contact
+</a>
+</div>
+
+
+
+</body>
+</html>
+
+

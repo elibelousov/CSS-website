@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    text-align:center;
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+  font-family:'Monaco';
+  font-weight:300;
+  font-size:26px;
+  padding-top:1vh;
+  height:100vh;
+  overflow:hidden;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #555;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+ /*code for animated code below*/
+
+span {
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  animation: smoky 5s 3s both;
+}
+
+span:nth-child(even){
+  animation-name: smoky-mirror;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform:
+      translate3d(15rem,-8rem,0)
+      rotate(-40deg)
+      skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke; }
+  to {
+    transform:
+      translate3d(18rem,-8rem,0)
+      rotate(-40deg) 
+      skewX(-70deg)
+      scale(2);
+     text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@for $item from 1 through 21 {
+  span:nth-of-type(#{$item}){ 
+    animation-delay: #{(3 + ($item/10))}s; 
+  }
+} 
+
+h1 {
+  font-size: 26px;
+}
+
+/*code for 2nd animated code below*/
+
+form {
+  border: 3px solid transparent;
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+  background-color: transparent;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+</style>
+</head>
+<body>
+<h1>Subscribe to my newsletter below</h1>
+
+<span>...i</span><span>f</span><span></span><span>&nbsp;</span><span>y</span><span>o</span><span>u</span><span></span><span></span><span>&nbsp;</span><span></span><span>d</span><span>a</span><span>r</span><span>e</span><span>&nbsp;</span><span></span><span></span><span></span><span></span><span></span><span></span>
+
+<form action="/action_page.php">
+
+  <div class="container" style="background-color:transparent">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
+
+
+<p></p>
+
+
+
+
+
+<p>
+
+</p>
+
+
+
+<div class="navbar">
+  <a href="https://elibelousov.github.io/CSS-website/index.html" >Home
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage2.html">Intro
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage3.html">Excel
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage4.html">Bugs
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage5.html"class="active">Contact
+</a>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
