@@ -121,7 +121,7 @@ const textNodes = [
   },
  {
     id: 15,
-    text: "Okey dokie, now that you have the theme, you'll need to find a way to organize your work externally. This will not only make your process  easier to track but it'll also keep your work saved. Who knows how much frustration you're saving with this. Anywho, you'll need to find a tool to help you organize. You think for a moment and say 'how about Excel?' After all, you've used it many times so you know it's reliable and with it, you can keep everything offline. Excel it is!\n\nAs you open the Excel application on your Mac however, you notice that you cannot make any changes. Turns out you do not have a license and you refuse to spend money for a year's cloud subscription over this alone. You then start to think, is it even necessary to track your work externally. After all, it'll take far more time to export, organize and then import changes to a mod than if you were to limit changes to just the game files alone. Also, if you spend too much time on the tracking of the mod, you'll risk risk boredom as you won't see progress as quickly. What do you decide?",
+    text: "Okey dokie, now that you have the theme, you'll need to find a way to organize your work externally. This will not only make your process  easier to track but it'll also keep your work saved. Who knows how much frustration you're saving with this. Anywho, you'll need to find a tool to help you organize. You think for a moment and say 'how about Excel?' After all, you've used it many times so you know it's reliable and with it, you can keep everything offline. Excel it is!\n\nAs you open the Excel application on your Mac however, you notice that you cannot make any changes. Turns out you do not have a license and you refuse to spend money for a year's cloud subscription over this alone. You then start to think, is it even necessary to track your work externally. After all, it'll take far more time to export, organize and then import changes to a mod than if you were to limit changes to just the game files alone. Also, if you spend too much time on the tracking of the mod, you'll risk boredom as you won't see progress as quickly. What do you decide?",
     options: [
       {
         text: "There's no need to export my work. What's the worst that can happen?",
@@ -160,7 +160,7 @@ const textNodes = [
         nextText: 18
       },
       {
-        text: "I'll use Google Sheets. It's the most time consuming but I know my work is guaranteed to be safe and I can better organize my process better to ensure that any changes are done without issues.",
+        text: "I'll use Google Sheets. It's the most time consuming but I know my work is guaranteed to be safe and I can organize my process better to ensure that any changes are done without issues.",
         setState: {googlesheets: true},
         nextText: 16
       },
