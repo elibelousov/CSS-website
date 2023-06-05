@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+   <title>Choose your own adventure game in the theme of a Victoria 3 modder</title>
 <style>
 
 body {
@@ -40,12 +41,13 @@ body {
 }
 
 .navbar a.active {
-  background-color: blue;
+  background-color: #0008FA; /*blue*/
+
   color: white;
 }
 
 .navbar a.other {
-  background-color: red;
+  background-color: #EE0700; /*red*/
   color: white;
 }
 
@@ -83,11 +85,6 @@ body {
 </head>
 <body>
 
-<div class = 'container projects'>
-   <h1></h1>
-<div class="overlay"></div>
-</div>
-
 
 
 <p></p>
@@ -104,9 +101,14 @@ body {
   <span></span>
 </div>
 
-<div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+<div class='console-container'
+role="main">
+<span id='text'></span>
+<div class='console-underscore' id='console'>&#95;</div>
+</div>
 
-<div class="navbar">
+<div class="navbar"
+role="navigation">
   <a href="https://elibelousov.github.io/CSS-website/index.html"class="active"
 aria-label="Use this link if you'd like to return the the home page of the website">
 Blue Button
