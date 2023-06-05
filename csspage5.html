@@ -144,19 +144,14 @@ input[type=submit]:hover {
 <span>...i</span><span>f</span><span></span><span>&nbsp;</span><span>y</span><span>o</span><span>u</span><span></span><span></span><span>&nbsp;</span><span></span><span>d</span><span>a</span><span>r</span><span>e</span><span>&nbsp;</span><span></span><span></span><span></span><span></span><span></span><span></span>
 
 <form action="/action_page.php">
-   
-<label for="Name">Your first and last name</label>
-<label for="Email Address">Your email address</label>
 
   <div class="container" style="background-color:transparent"
   role="form">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
+<label for="name">Your First and Last name:</label>
+<input name="Name" type="text" id="name"/>
 
-  </div>
-
-  <div class="container"
-aria-label="click here to subscribe to the author's newsletter">
+<label for="email">Your email address:</label>
+<input name="Email" type="text" id="email"/>
     <input type="submit" value="Subscribe">
   </div>
 </form>
