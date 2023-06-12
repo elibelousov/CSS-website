@@ -4,21 +4,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Choose your own adventure game in the theme of a Victoria 3 modder</title>
 <style>
-
 body {
     text-align:center;
   background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
   color:#555;
   font-family:'Monaco';
   font-weight:300;
-  font-size:1.25vw;
+ /* font-size:1.25vw;
   padding-top:1vh;
   height:100vh;
-  overflow:hidden;
+  */
+  font-size: 125%;
+  padding-top: 1.13em;
+  height:100%;
+
+ /* overflow:scroll;*/
 
 }
 
-h1 {font-size:3.00vw;}
+
+h1 {
+	font-size:160%;
+	height: 25%;
+	position: fixed;
+	top: 0;
+	border: thin solid red;
+	margin: 0;
+	padding: 0;
+}
+
 
 
 .navbar {
@@ -27,6 +41,7 @@ h1 {font-size:3.00vw;}
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 20%;
 }
 
 .navbar a {
@@ -34,16 +49,17 @@ h1 {font-size:3.00vw;}
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 20px;
+  padding: 2% 1em;
   text-decoration: none;
-  font-size: 1.75vw;
+ /* font-size: 1.75vw;*/
+  font-size: 130%;
+margin: 1%;
 }
 
 .navbar a:hover {
   background: #f1f1f1;
   color: black;
 }
-
 .navbar a.active {
   background-color: #0008FA; /*blue*/
 
@@ -56,8 +72,17 @@ h1 {font-size:3.00vw;}
 }
 
 .main {
+	/*
   padding: 16px;
   margin-bottom: 30px;
+  */
+	padding: 0.75%;
+	margin-bottom: 2%;
+	position: fixed;
+	top: 25.5%;
+height: 53%;
+  overflow:scroll;
+border: thin solid black;
 }
 
 
@@ -96,11 +121,11 @@ aria-label="Use this link if you'd like to proceed to play the text-based advent
 Red Button
 </a>
 </div>
-
+<div class="main">
 <p>Hi there, Eli here. Thanks for your interest in my game! What I'm going to offer now is something no other game has offered you before... a choice.You click the blue button below and the story ends. You get back to your life and believe whatever you want to believe... You click the red button however... you get to play my game, and I show you what it's really like to be a modder.
 
 </p>
-
+</div>
 
 </body>
 </html>
