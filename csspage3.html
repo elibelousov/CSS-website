@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>How excel and other spreadsheet softwares can make modding Victoria 3 easier</title>
 <style>
 
@@ -11,11 +11,37 @@ body {
   color:#555;
   font-family:'Monaco';
   font-weight:300;
-  font-size:16px;
+  font-size:1.45vw;
   padding-top:1vh;
   height:100vh;
   overflow:hidden;
 
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+p {
+  text-align:left;
+  position:fixed;
+  width:100%;
+  bottom:60px;
+  font-size:1.25vw;
+  color:#555;
+  margin-top:200px;
+}
+
+
+ol {
+  padding: 20px;
+}
+
+ol li {
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+  text-align:left;
 }
 
 .navbar {
@@ -31,9 +57,9 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 16px;
+  padding: 10px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.75vw;
 }
 
 .navbar a:hover {
@@ -51,59 +77,9 @@ body {
   margin-bottom: 30px;
 }
 
- /*code for animated code below*/
-
-#container {
-  color:#555;
-  font-size:23px;
-  font-weight:bold;
-  padding-top:100px;  
-  width:100%;
-  bottom:45%;
-  display:block;
-    text-align:center;
-
-}
-
-#flip {
-  height:50px;
-  overflow:hidden;
-}
-
-#flip > div > div {
-  color:#555;
-  padding:4px 20px;
-  height:45px;
-  margin-bottom:45px;
-  display:inline-block;
-}
-
-#flip div:first-child {
-  animation: show 8s linear infinite;
-}
 
 
 
-@keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
-}
-
-p {
-  text-align:left;
-  position:fixed;
-  width:100%;
-  bottom:60px;
-  font-size:16px;
-  color:#555;
-  margin-top:200px;
-}
 
 </style>
 </head>
@@ -115,12 +91,15 @@ p {
 
 <div id=container
 role="Banner">
-Better  <div id=flip>
-    <div><div>Organization</div></div>
-    <div><div>Safekeeping </div></div>
-    <div><div>Time-saving </div></div>
-  </div>
+  <div id=flip>
+    </div>
+<ol>
+   <li>It can organize your data more efficiently</li>
+    <li>It can ensure that your information is always safe</li>
+    <li>It can save you time by incorporating automated tools </li>
+  </ol>
 
+ 
 
 
 
@@ -134,31 +113,32 @@ Better  <div id=flip>
 <div class="navbar"
 role="navigation">
   <a href="https://elibelousov.github.io/CSS-website/index.html"
-  aria-label="Click this link if you'd like to access the home page">
+  aria-label="Home Page">
 Home
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage2.html"
-  aria-label="Click this link if you'd like to learn about how to begin modding Victoria 3">
+  aria-label="Intro Page">
 Intro
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage3.html"
-  class="active"
-  aria-label="Click this link if you'd like to learn about the relationship between spreadsheet software and modding Victoria 3">
+    class="active"
+  aria-label="Excel Spreadsheets Page">
 Excel
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage4.html"
-  aria-label="Click this link if you'd like to learn more about bugs that you might experience when modding Victoria 3">
+  aria-label="Bugs and glitches page">
 Bugs
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage5.html"
-  aria-label="Click this link if you'd like to contact the author">
+  aria-label="Contact author page">
 Contact
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage6.html"
-  aria-label="Click this link if you'd like to play the first part of a text-based adventure game about the life of a Victoria 3 modder">
+  aria-label="Play a game page">
 Game
 </a>
 </div>
+
 
 
 
