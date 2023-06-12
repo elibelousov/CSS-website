@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>How to begin modding Victoria 3</title>
 <style>
 
@@ -17,6 +18,20 @@ body {
 
 }
 
+p {
+  text-align:left;
+  position:fixed;
+  width:100%;
+  bottom:60px;
+  font-size:1.25vw;
+  color:#555;
+  margin-top:200px;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -30,9 +45,9 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 16px;
+  padding: 10px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.75vw;
 }
 
 .navbar a:hover {
@@ -50,140 +65,21 @@ body {
   margin-bottom: 30px;
 }
 
- /*code for animated code below*/
 
-
-.deconstructed {
-  position: relative;
-  margin: auto;
-  height: 0.71em;
-  color: transparent;
-  font-family: 'Cambay', sans-serif;
-  font-size: 10vw;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.03em;
-}
-
-.deconstructed > div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: grey;
-  pointer-events: none;
-}
-
-.deconstructed > div:nth-child(1) {
-  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
-  mask-image: linear-gradient(black 25%, transparent 25%);
-  animation: deconstructed1 5s infinite;
-}
-
-.deconstructed > div:nth-child(2) {
-  -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
-  mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
-  animation: deconstructed2 5s infinite;
-}
-
-.deconstructed > div:nth-child(3) {
-   -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
-  mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
-  animation: deconstructed3 5s infinite;
-}
-
-.deconstructed > div:nth-child(4) {
-   -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
-  mask-image: linear-gradient(transparent 75%, black 75%);
-  animation: deconstructed4 5s infinite;
-}
-
-@keyframes deconstructed1 {
-  0% {
-    transform: translateX(100%);
-  }
-  26% {
-    transform: translateX(0%);
-  }
-  83% {
-    transform: translateX(-0.1%);
-  }
-  100% {
-    transform: translateX(-120%);
-  }
-}
-
-@keyframes deconstructed2 {
-  0% {
-    transform: translateX(100%);
-  }
-  24% {
-    transform: translateX(0.5%);
-  }
-  82% {
-    transform: translateX(-0.2%);
-  }
-  100% {
-    transform: translateX(-125%);
-  }
-}
-
-@keyframes deconstructed3 {
-  0% {
-    transform: translateX(100%);
-  }
-  22% {
-    transform: translateX(0%);
-  }
-  81% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-130%);
-  }
-}
-
-@keyframes deconstructed4 {
-  0% {
-    transform: translateX(100%);
-  }
-  20% {
-    transform: translateX(0%);
-  }
-  80% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-135%);
-  }
-}
-
-p {
-  text-align:left;
-  position:fixed;
-  width:100%;
-  bottom:60px;
-  font-size:16px;
-  color:#555;
-  margin-top:200px;
-}
 
 </style>
 </head>
 <body>
-<h1>Let's</h1>
-<div class="deconstructed"
-role="banner">
-  DECONSTRUCT
-  <div>DECONSTRUCT</div>
-  <div>DECONSTRUCT</div>
-  <div>DECONSTRUCT</div>
-  <div>DECONSTRUCT</div>
+
+<h1>Let’s deconstruct how to begin</h1>
+
+<img src="https://cdn.churchleaders.com/wp-content/uploads/2020/01/american-evangelicalism.jpg" 
+alt="Image of someone's mind overanalyzing a non-specific task" 
+style="max-width:100%;height:auto;"
+media="(max-width: 100px)">
+
+
 </div>
-
-<h1>how to begin</h1>
-
 
 
 
@@ -197,31 +93,32 @@ role="banner">
 <div class="navbar"
 role="navigation">
   <a href="https://elibelousov.github.io/CSS-website/index.html"
-  aria-label="Click this link if you'd like to access the home page">
+  aria-label="Home Page">
 Home
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage2.html"
-  class="active"
-  aria-label="Click this link if you'd like to learn about how to begin modding Victoria 3">
+    class="active"
+  aria-label="Intro Page">
 Intro
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage3.html"
-  aria-label="Click this link if you'd like to learn about the relationship between spreadsheet software and modding Victoria 3">
+  aria-label="Excel Spreadsheets Page">
 Excel
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage4.html"
-  aria-label="Click this link if you'd like to learn more about bugs that you might experience when modding Victoria 3">
+  aria-label="Bugs and glitches page">
 Bugs
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage5.html"
-  aria-label="Click this link if you'd like to contact the author">
+  aria-label="Contact author page">
 Contact
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage6.html"
-  aria-label="Click this link if you'd like to play the first part of a text-based adventure game about the life of a Victoria 3 modder">
+  aria-label="Play a game page">
 Game
 </a>
 </div>
+
 
 
 </body>
