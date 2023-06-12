@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>How to contact the owner of this website and sign up for their newsletter</title>
 <style>
 
@@ -10,11 +11,15 @@ body {
   color:#555;
   font-family:'Monaco';
   font-weight:300;
-  font-size:26px;
+  font-size:1.45vw;
   padding-top:1vh;
   height:100vh;
   overflow:hidden;
 
+}
+
+h1 {
+  font-size: 3vw;
 }
 
 .navbar {
@@ -30,9 +35,9 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 16px;
+  padding: 10px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.75vw;
 }
 
 .navbar a:hover {
@@ -50,58 +55,8 @@ body {
   margin-bottom: 30px;
 }
 
- /*code for animated code below*/
 
-span {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 5s 3s both;
-}
-
-span:nth-child(even){
-  animation-name: smoky-mirror;
-}
-
-@keyframes smoky {
-  60% {
-    text-shadow: 0 0 40px whitesmoke;
-  }
-  to {
-    transform:
-      translate3d(15rem,-8rem,0)
-      rotate(-40deg)
-      skewX(70deg)
-      scale(1.5);
-    text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
-}
-
-@keyframes smoky-mirror {
-  60% {
-    text-shadow: 0 0 40px whitesmoke; }
-  to {
-    transform:
-      translate3d(18rem,-8rem,0)
-      rotate(-40deg) 
-      skewX(-70deg)
-      scale(2);
-     text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
-}
-
-@for $item from 1 through 21 {
-  span:nth-of-type(#{$item}){ 
-    animation-delay: #{(3 + ($item/10))}s; 
-  }
-} 
-
-h1 {
-  font-size: 26px;
-}
-
-/*code for 2nd animated code below*/
+/*code for form submission below*/
 
 form {
   border: 3px solid transparent;
@@ -141,17 +96,15 @@ input[type=submit]:hover {
 <body>
 <h1>Subscribe to my newsletter below</h1>
 
-<span>...i</span><span>f</span><span></span><span>&nbsp;</span><span>y</span><span>o</span><span>u</span><span></span><span></span><span>&nbsp;</span><span></span><span>d</span><span>a</span><span>r</span><span>e</span><span>&nbsp;</span><span></span><span></span><span></span><span></span><span></span><span></span>
-
 <form action="/action_page.php">
 
   <div class="container" style="background-color:transparent"
   role="form">
-<label for="name">Your First and Last name:</label>
-<input name="Name" type="text" id="name"/>
+<label for="fname">Your First Name:</label>
+<input autocomplete="given-name" name="Name" type="text" id="name"/>
 
-<label for="email">Your email address:</label>
-<input name="Email" type="text" id="email"/>
+<label for="email">Your Email Address:</label>
+<input autocomplete="email" name="Email" type="text" id="email"/>
     <input type="submit" value="Subscribe">
   </div>
 </form>
@@ -173,31 +126,33 @@ input[type=submit]:hover {
 <div class="navbar"
 role="navigation">
   <a href="https://elibelousov.github.io/CSS-website/index.html"
-  aria-label="Click this link if you'd like to access the home page">
+  class="active"
+  aria-label="Home Page">
 Home
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage2.html"
-  aria-label="Click this link if you'd like to learn about how to begin modding Victoria 3">
+  aria-label="Intro Page">
 Intro
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage3.html"
-  aria-label="Click this link if you'd like to learn about the relationship between spreadsheet software and modding Victoria 3">
+  aria-label="Excel Spreadsheets Page">
 Excel
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage4.html"
-  aria-label="Click this link if you'd like to learn more about bugs that you might experience when modding Victoria 3">
+  aria-label="Bugs and glitches page">
 Bugs
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage5.html"
-  class="active"
-  aria-label="Click this link if you'd like to contact the author">
+    class="active"
+  aria-label="Contact author page">
 Contact
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage6.html"
-  aria-label="Click this link if you'd like to play the first part of a text-based adventure game about the life of a Victoria 3 modder">
+  aria-label="Play a game page">
 Game
 </a>
 </div>
+
 
 
 
