@@ -20,7 +20,6 @@ body {
 
 h1 {font-size:3.00vw;}
 
-
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -30,11 +29,11 @@ h1 {font-size:3.00vw;}
 }
 
 .navbar a {
-  float: center;
+  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
   text-decoration: none;
   font-size: 1.75vw;
 }
@@ -45,13 +44,7 @@ h1 {font-size:3.00vw;}
 }
 
 .navbar a.active {
-  background-color: #0008FA; /*blue*/
-
-  color: white;
-}
-
-.navbar a.other {
-  background-color: #EE0700; /*red*/
+  background-color: #555;
   color: white;
 }
 
@@ -61,12 +54,43 @@ h1 {font-size:3.00vw;}
 }
 
 
+.bluebutton {
+  background-color: #0008FA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw;
+  margin: 4px 20px;
+  cursor: pointer;
+}
+
+.redbutton {
+  background-color: #EE0700;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw;
+  margin: 20px 20px;
+  cursor: pointer;
+}
 
 
-.navbar a:hover {
+.redbutton a:hover {
   background: #f1f1f1;
   color: black;
 }
+
+.redbutton a.active {
+  background-color: #0008FA; /*blue*/
+  color: white;
+}
+
 
 
 
@@ -77,29 +101,57 @@ h1 {font-size:3.00vw;}
 
 <h1>Life of a Victoria 3 Modder</h1>
 
-<div id = "name"> 
-  <span></span>
-</div> 
 
 
 
 
+
+
+
+
+<p>Hi there, Eli here. Thanks for your interest in my game! What I'm going to offer now is something no other game has offered you before... a choice. You click the blue button below and the story ends. You get back to your life and believe whatever you want to believe... You click the red button however... you get to play my game, and I show you what it's really like to be a modder.
+
+</p>
 
 <div class="navbar"
 role="navigation">
-  <a href="https://elibelousov.github.io/CSS-website/index.html"class="active"
-aria-label="Use this link if you'd like to return the the home page of the website">
-Blue Button
+  <a href="https://elibelousov.github.io/CSS-website/index.html"
+  aria-label="Home Page">
+Home
 </a>
-  <a href="https://elibelousov.github.io/CSS-website/game.html"class="other"
-aria-label="Use this link if you'd like to proceed to play the text-based adventure game about the life of a Victoria 3 modder">
-Red Button
+  <a href="https://elibelousov.github.io/CSS-website/csspage2.html"
+  aria-label="Intro Page">
+Intro
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage3.html"
+  aria-label="Excel Spreadsheets Page">
+Excel
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage4.html"
+  aria-label="Bugs and glitches page">
+Bugs
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage5.html"
+  aria-label="Contact author page">
+Contact
+</a>
+  <a href="https://elibelousov.github.io/CSS-website/csspage6.html"
+      class="active"
+  aria-label="Play a game page">
+Game
 </a>
 </div>
 
-<p>Hi there, Eli here. Thanks for your interest in my game! What I'm going to offer now is something no other game has offered you before... a choice.You click the blue button below and the story ends. You get back to your life and believe whatever you want to believe... You click the red button however... you get to play my game, and I show you what it's really like to be a modder.
-
-</p>
+<a href="https://elibelousov.github.io/CSS-website/index.html" 
+class="bluebutton"
+aria-label="Return to the home page of the website"
+>Blue Button
+</a>
+<a href="https://elibelousov.github.io/CSS-website/game.html" 
+class="redbutton"
+aria-label="Proceed to play the text-based adventure game about the life of a Victoria 3 modder"
+>Red Button
+</a>
 
 
 </body>
