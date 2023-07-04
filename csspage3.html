@@ -8,27 +8,27 @@
 
 body {
     text-align:center;
-  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  background:ghostwhite;
   color:#555;
   font-family:'Monaco';
   font-weight:300;
-  font-size:1.5vw;
+  font-size:1em;
   padding-top:1vh;
   height:100vh;
-  overflow:hidden;
+  overflow:scroll;
 
 }
 
 h1 {
-  font-size: 3vw;
+  font-size: 3em;
 }
 
 p {
   text-align:left;
-  position:fixed;
+  position:static;
   width:80%;
   bottom:40px;
-  font-size:1.25vw;
+  font-size:1em;
   color:#555;
   margin-top:200px;
 }
@@ -46,9 +46,9 @@ ol li {
 }
 
 .navbar {
-  overflow: hidden;
+  overflow: scroll;
   background-color: #333;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
 }
@@ -58,9 +58,9 @@ ol li {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 1px 5vw;
+  padding: 1vh 5vw;
   text-decoration: none;
-  font-size: 1.75vw;
+  font-size: 1em;
 }
 
 .navbar a:hover {
@@ -90,10 +90,7 @@ ol li {
 
 <p></p>
 
-<div id=container
-role="Banner">
-  <div id=flip>
-    </div>
+
 <ol>
    <li>It can organize your data more efficiently</li>
     <li>It can ensure that your information is always safe</li>
