@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>How to deal with bugs encountered while modding Victoria 3</title>
 <style>
 
 body {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-
     text-align:center;
-  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  background:ghostwhite;
   color:#555;
   font-family:'Monaco';
   font-weight:300;
-  font-size:3vw;
+  font-size:1em;
   padding-top:1vh;
   height:100vh;
-  overflow:hidden;
+  overflow:scroll;
 
+}
+
+h1 {
+  font-size: 3em;
 }
 
 p {
   text-align:left;
-  position:fixed;
+  position:static;
   width:80%;
   bottom:40px;
-  font-size:1.25vw;
+  font-size:1em;
   color:#555;
   margin-top:200px;
 }
 
 .navbar {
-  overflow: hidden;
+  overflow: scroll;
   background-color: #333;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
 }
@@ -48,10 +44,11 @@ p {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 1px 5vw;
+  padding: 1vh 5vw;
   text-decoration: none;
-  font-size: 1.75vw;
+  font-size: 1em;
 }
+
 
 .navbar a:hover {
   background: #f1f1f1;
@@ -89,7 +86,7 @@ div{
 div:before,
 div:after{
   content: attr(title);
-  position: absolute;
+  position: sticky;
   left: 0;
 }
 
@@ -138,12 +135,12 @@ div:after{
 
 <p>
 </p>
-
+<h1>
 <div title="404"
 role="header"
 >404 Error</div>
 
-
+</h1>
 
 
 
@@ -159,32 +156,31 @@ role="header"
 <div class="navbar"
 role="navigation">
   <a href="https://elibelousov.github.io/CSS-website/index.html"
-  aria-label="Home Page">
+  aria-label="Click this link if you'd like to access the home page">
 Home
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage2.html"
-  aria-label="Intro Page">
+  aria-label="Click this link if you'd like to learn about how to begin modding Victoria 3">
 Intro
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage3.html"
-  aria-label="Excel Spreadsheets Page">
+  aria-label="Click this link if you'd like to learn about the relationship between spreadsheet software and modding Victoria 3">
 Excel
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage4.html"
-    class="active"
-  aria-label="Bugs and glitches page">
+  class="active"
+  aria-label="Click this link if you'd like to learn more about bugs that you might experience when modding Victoria 3">
 Bugs
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage5.html"
-  aria-label="Contact author page">
+  aria-label="Click this link if you'd like to contact the author">
 Contact
 </a>
   <a href="https://elibelousov.github.io/CSS-website/csspage6.html"
-  aria-label="Play a game page">
+  aria-label="Click this link if you'd like to play the first part of a text-based adventure game about the life of a Victoria 3 modder">
 Game
 </a>
 </div>
-
 
 
 
